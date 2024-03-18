@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .bg-full {
+            background-size: contain;
+            background-color: black;
+        }
+        .judul {
+            margin-top: 10rem;
+            margin-bottom: 2rem;
+            font-family: 'Vollkorn', serif;
+            font-size: 2rem;
+            font-style: normal;
+            color:white;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        .judul2 {
+            margin-top: 8rem;
+            margin-bottom: 1rem;
+            font-family: 'Karla', sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            color:hsl(18, 84%, 55%);
+        }
+        .card-title {
+            font-family: 'Karla', serif;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+        }
+        .card-content {
+            font-family: 'Karla', serif;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 300;
+        }
+        .button-card {
+            font-family: 'Karla', serif;
+            font-size: 0.8rem;
+            display: flex;
+            padding: 0.5rem 1.2rem;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2rem;
+            background: hsl(18, 84%, 55%);
+            color: white;
+        }
+        footer {
+            font-family: 'Karla', serif;
+            background-color: black;
+            display: flex;
+            width: 100%;
+            padding: 0.5rem 0;
+            justify-content: center;
+            align-items: center;
+            gap: 0.625rem;
+        }
+        .card{
+            display: flex;
+            width: 800px;
+            padding: 40px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            border-radius: 16px;
+            border: 4px solid #ff4231;
+            background: var(--putih, #FFF);
+            box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.10);
+            color:white;
+        }        
+        .cardservice{
+            display: flex;
+            width: 150px;
+            padding: 20px;
+            font-size: 0.75rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            border-radius: 8px;
+            border: 1px solid #ffc75e;
+            background: var(--putih, #FFF);
+            color:white;
+            display: block;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 2rem;
+            width: 40%;
+        }.p {
+        text-decoration: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Vollkorn:wght@700&display=swap" rel="stylesheet">
+    <title>Welcome Page</title>
+</head>
+<body>
+    <!-- Container dengan latar belakang gambar -->
+    <div class="bg-full bg-center flex flex-col justify-center items-center relative" style="background-image: url('https://www.jagoanhosting.com/wp-content/uploads/2023/08/BGHERO.png');">
+        <!-- Logo di atas card -->
+        <h2 class="judul" style="text-align: center;"><span class="text-red-600">Hello, Nick. </span> Welcome to Test Page<br>
+            <b>Main</b><span class="text-orange-600" ><b>Menu</b></span> 
+</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+        <!-- Main Card -->
+            <div class="bg-red-700 shadow-lg p-4 rounded-lg m-2 w-48 card">
+                <img src="oi.png" width="48">
+                <h2 class="card-title text-lg font-semibold mb-1">Mari kita coba </h2>
+                <p class="card-content">Bro's mencoba 😋😋🗣️🗣️📢📢📢!!!!</p>
+                <a href="GuestView.php" class="button-card mt-2">Regis Siswa</a>
+            </div>
+            <!-- Seccondary  -->
+            <div class="bg-red-700 shadow-lg p-4 rounded-lg m-2 w-48 card">
+                <img src="voc.gif" width="48">
+                <h2 class="card-title text-lg font-semibold mb-1">NOE ADMIN BEE</h2>
+                <p class="card-content">Viewer Database 🔥🔥🔥🎇🧨!! (WIP(malas.))</p>
+                <a href="View.php" class="button-card mt-2">Admin</a>
+            </div>
+             <!-- Portofolio  -->
+            <div class="bg-red-700 shadow-lg p-4 rounded-lg m-2 w-48 card">
+                <img src="kys.gif" width="48">
+                <h2 class="card-title text-lg font-semibold mb-1">Portofowio:3 </h2>
+                <p class="card-content">My poinltess useless PortoFowio</p>
+                <a href="Portofolio/index.html" class="button-card mt-2">Portofolio</a>
+            </div>
+            <!-- Wordpress  -->
+            <div class="bg-red-700 shadow-lg p-4 rounded-lg m-2 w-48 card">
+                <img src="kag.png" width="48">
+                <h2 class="card-title text-lg font-semibold mb-1">Wordpress</h2>
+                <p class="card-content">My Wordpress TestHINGs</p>
+                <a href="https://nayaka-tkj5.tefa.my.id/wordpres/" class="button-card mt-2">Wordpress</a>
+            </div>
+        </div>
+        <iframe width="90%" height="250" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1523163907&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/tribaltrapmusic" title="Tribal Trap" target="_blank" style="color: #cccccc; text-decoration: none;">Tribal Trap</a> 路 <a href="https://soundcloud.com/tribaltrapmusic/chxse-wave-coracao" title="CHXSE WAVE - CARACAO" target="_blank" style="color: #cccccc; text-decoration: none;">CHXSE WAVE - CARACAO</a></div>
+        <p class="judul2" href="https://open.spotify.com/track/6YbQ1QyjmMMpVVhIB6L1mg?si=b48ab31c917f41e8">| The Wolrd Changes, You Should've Walk not Talk |</p>
+    </div>
+    <script>
+        function playAudioAndRedirect() {
+            var audio = document.getElementById("myAudio");
+            var loading = document.getElementById("loading");
+
+            audio.play();
+            loading.style.display = "flex";
+
+            setTimeout(function() {
+                window.location.href = "login.php";
+            }, 7000);
+        }
+    </script> 
+    <footer class="text-orange-600">
+	    <b>MY COPYRIGHT @Nicowoof</b>
+    </footer>
+</body>
+</html>
